@@ -31,3 +31,17 @@ Done between <style><style> tags
 </script>
 <p>{@html variable}</p>
 ```
+
+### Adding functionality to a button
+```svelte
+<button on:click={clickHandlerFunction}>...</button>
+```
+
+#### alternate way:
+```svelte
+<script>
+  $:variableName=action;
+ </script>
+ ```
+ 
+ 
