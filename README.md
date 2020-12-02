@@ -88,5 +88,5 @@ Default values can be provided to the svelte props which are used when no prop a
   export let answer=<value>
 </script>
 ```
-The value can a string or number or a boolean.
+The value can be a string or number or a boolean.
 
