@@ -17,6 +17,14 @@ Done between <style><style> tags
   //JS code
 </script>
 ```
+
+### Using variables in svelte
+```svelte
+<script>
+  let variableName="data";
+</script>
+<p>The data is, {variableName}</p>
+```
 ### Importing new components into app.svelte
 ```svelte
 <script>
