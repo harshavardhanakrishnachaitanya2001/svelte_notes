@@ -107,3 +107,23 @@ Example:
 
 <Info {...pkg}/>
 ```
+
+### Conditional statements
+```svellte
+{#if <condition>}
+	statements
+{:else}
+	statements
+{/if}
+```
+
+### Multiple conditions
+```svelte
+{#if <condition>}
+	statements
+{:else if <condition>}
+	statements
+{:else}
+	statements
+{/if}
+```
