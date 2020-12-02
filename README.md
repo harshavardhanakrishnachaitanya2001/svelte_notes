@@ -127,3 +127,55 @@ Example:
 	statements
 {/if}
 ```
+
+### Looping in an array
+```svelte
+{#each <arrayName> as <singleItemName>}
+	statement which operate on {<singleItemName.data>}
+{/each}
+```
+Example:
+```svelte
+<script>
+	let cats = [
+		{ id: 'J---aiyznGQ', name: 'Keyboard Cat' },
+		{ id: 'z_AbfPXTKms', name: 'Maru' },
+		{ id: 'OUtn3pvWmpg', name: 'Henri The Existential Cat' }
+	];
+</script>
+
+<h1>The Famous Cats of YouTube</h1>
+
+<ul>
+	{#each cats as cat}
+		<li><a target="_blank" href="https://www.youtube.com/watch?v={cat.id}">
+			{cat.name}
+		</a></li>
+	{/each}
+</ul>
+```
+#### Array with index
+```svelte
+
+<script>
+	let cats = [
+		{ id: 'J---aiyznGQ', name: 'Keyboard Cat' },
+		{ id: 'z_AbfPXTKms', name: 'Maru' },
+		{ id: 'OUtn3pvWmpg', name: 'Henri The Existential Cat' }
+	];
+</script>
+
+<h1>The Famous Cats of YouTube</h1>
+
+<ul>
+	{#each cats as cat, i}
+		<li><a target="_blank" href="https://www.youtube.com/watch?v={cat.id}">
+			{i+1}:{cat.name}
+		</a></li>
+	{/each}
+</ul>
+
+'i' stands for index of the array elements. Therefore, i+1 means the value 1 if array element has the index value of 0
+``` 
+
+###
