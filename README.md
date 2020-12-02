@@ -51,5 +51,6 @@ Done between <style><style> tags
   $:variableName=action;
  </script>
  ```
+ The $: can also be used in front of if blocks
  
- 
+ ### 
