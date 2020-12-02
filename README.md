@@ -90,3 +90,20 @@ Default values can be provided to the svelte props which are used when no prop a
 ```
 The value can be a string or number or a boolean.
 
+### Properties used in object
+When n number of props are used inside an object, while calling, use that package name insted of assigning values to the props explicitly
+Example:
+```svelte
+<script>
+	import Info from './Info.svelte';
+
+	const pkg = {
+		name: 'svelte',
+		version: 3,
+		speed: 'blazing',
+		website: 'https://svelte.dev'
+	};
+</script>
+
+<Info {...pkg}/>
+```
