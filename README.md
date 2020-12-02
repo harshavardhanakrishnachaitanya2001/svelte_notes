@@ -66,3 +66,27 @@ Done between <style><style> tags
   }
 </script>
  ```
+
+### Props in svelte
+Props in svelte are defined using the 'export' keyword
+```svelte
+// Inside a component
+<script>
+  export answer;
+</script>
+```
+This property (prop for short), is used inside another component which imports the component
+
+```svelte
+<ImportedComponent property=value/>
+```
+Default values can be provided to the svelte props which are used when no prop and value are given for that component when used in another component
+
+```svelte
+//Iniside ImportedComponent
+<script>
+  export let answer=<value>
+</script>
+```
+The value can a string or number or a boolean.
+
