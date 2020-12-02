@@ -23,3 +23,11 @@ Done between <style><style> tags
   import Component from 'Component.svelte'
 </script>
 ```
+
+### Using html styles like bold, underline, etc.. inside JS code
+```svelte
+<script>
+  let variable="some new <htmlTag>text</htmlTag>"
+</script>
+<p>{@html variable}</p>
+```
