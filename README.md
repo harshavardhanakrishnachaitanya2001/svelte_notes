@@ -53,4 +53,16 @@ Done between <style><style> tags
  ```
  The $: can also be used in front of if blocks
  
- ### 
+ ### Arrays in svelte
+ After performing operations on arrays, it must be reassigned to itself.
+ 
+ #### Simpler way:
+ To perform the above operation in more easy way, spread operator(...) is used.
+ Ex:
+ ```svelte
+ <script>
+   function addNumber() {
+    numbers = [...numbers, numbers.length + 1];
+  }
+</script>
+ ```
