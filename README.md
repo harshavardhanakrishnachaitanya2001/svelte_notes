@@ -178,4 +178,14 @@ Example:
 'i' stands for index of the array elements. Therefore, i+1 means the value 1 if array element has the index value of 0
 ``` 
 
-###
+### Asynchronous programming with sveltejs
+First an async function is defined in b/w the script tags and using the await keyword, fetching and convertion are done
+```svelte
+<!--Outside the script tags, at the end of the file-->
+{#await <variableThatReceivesTheReturnValueOfPromise>}
+Code that will execute before displaying fetched data
+{:then variableWhichStoresThePromise}
+//code
+{:catch error}
+exception handling code
+{/await}
