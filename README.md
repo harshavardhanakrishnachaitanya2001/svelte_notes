@@ -1,5 +1,7 @@
 # sveltejs
 
+## Sveltejs is compailer and not a framework
+
 ### To create a svelte application
 ```svelte
 npx degit sveltejs/template nameOfProject
