@@ -191,3 +191,10 @@ Code that will execute before displaying fetched data
 {:catch error}
 exception handling code
 {/await}
+```
+
+#### The 'once' modifier is used to execute a function only once.
+#### Example:
+```svelte
+<button on:click|once={handleClick}>Click me</button>
+```
